@@ -6,9 +6,10 @@ import tweepy
 import urllib2
 import xml.etree.ElementTree as ET
 from random import randrange
+import os
 
-CONSUMER_KEY=''
-CONSUMER_SECRET=''
+CONSUMER_KEY=os.environ.get('TWITTER_CONSUMERKEY')
+CONSUMER_SECRET=os.environ.get('TWITTER_CONSUMERSECRET')
 CREDENTIAL_FILE='./credential.txt'
 TEXT_DATE="本日の"
 TEXT1='の潮汐情報です。\n'

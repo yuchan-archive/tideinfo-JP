@@ -1,4 +1,2 @@
 venv
 *.pyc
-secret.conf
-credential.txt
